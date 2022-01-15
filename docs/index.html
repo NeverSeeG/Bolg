@@ -10,14 +10,34 @@
 </head>
 <body>
   <div id="app"></div>
+
   <script>
     window.$docsify = {
-      name: '',
+      ga: 'UA-XXXXX-Y',
+      search: 'auto',
+      name: 'WL的学习BLOG',
       repo: '',
-	  loadSidebar: true
+	  loadSidebar: true,
+      subMaxLevel: 1,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      }
+      // 完整配置参数
+
     }
   </script>
+  <style type="text/css">
+    .content {
+      overflow: auto;
+    }
+  </style>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>
